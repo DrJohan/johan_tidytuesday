@@ -22,6 +22,12 @@ library(ggtext)
 library(ggrepel)
 library(patchwork)
 library(systemfonts)
+library(ggimage)
+library(geomtextpath)
+library(stringr)
+library(showtext)
+library(cowplot)
+library(MetBrewer)
 theme_set(theme_minimal(base_size = 19, base_family = "Girassol"))
 theme_update(
   text = element_text(color = "grey12"),
@@ -40,4 +46,21 @@ theme_update(
 ```
 
 ## Data
+
+```{r data}
+
+breed_traits <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-02-01/breed_traits.csv') 
+
+breed_rank_all <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-02-01/breed_rank.csv')
+ 
+```
+
+```{r prep-data}
+
+
+```
+
+```{r plot}
+
+```
 
